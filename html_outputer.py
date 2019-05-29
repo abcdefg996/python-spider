@@ -5,13 +5,11 @@ class HtmlOutputer (object):
 		self.datas=[]
 
 	def collect_data(self,data):
-		# print(da)
 		if data is None:
 			return
 		self.datas.append(data)
 
 	def output_html(self):
-		# print(self.datas)
 		fout = open('output.html','w')
 		fout.write("<html>")
 		fout.write("<body>")

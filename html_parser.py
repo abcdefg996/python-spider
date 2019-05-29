@@ -10,14 +10,12 @@ class HtmlParser (object):
 		for link in links:
 			new_url = link['href']
 			new_full_url = urljoin(page_url,new_url)
-			# print(new_full_url)
 			new_urls.add(new_full_url)
 		return new_urls
 
 	def _get_new_data(self,page_url,soup):
 		res_data = {}
 
-		#<dd class="lemmaWgt-lemmaTitle-title"> <h1>PHP</h1>
 		res_data['url'] = page_url
 
 		title_node=soup.find('dd','lemmaWgt-lemmaTitle-title').find("h1")
