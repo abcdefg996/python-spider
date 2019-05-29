@@ -1,5 +1,5 @@
 # coding:utf8
-
+#这是输出器
 class HtmlOutputer (object):
 	def __init__(self):
 		self.datas=[]

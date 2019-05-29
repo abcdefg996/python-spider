@@ -1,5 +1,5 @@
 # coding:utf-8
-# 
+# 总调度程序
 import url_manager,html_downloader,html_parser,html_outputer
 
 class SpiderMain(object):

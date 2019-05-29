@@ -1,5 +1,5 @@
 # coding:utf8
-
+# url管理器
 class UrlManager (object):
 	def __init__(self):
 		self.new_urls = set()
